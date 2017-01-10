@@ -97,7 +97,7 @@ For each host in turn:
 
 The kubelet is now restarting every few seconds, as it waits in a crashloop for `kubeadm` to tell it what to do.
 
-Note: To disable SELinux by running `setenforce 0` is required in order to allow containers to access the host filesystem, which is required by pod networks for example. You have to do this until kubelet can handle SELinux better.
+Note: Disabling SELinux by running `setenforce 0` is required in order to allow containers to access the host filesystem, this is required by pod networks for example. This will be necessary until kubelet includes better SELinux handling.
 
 ### (2/4) Initializing your master
 
